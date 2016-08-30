@@ -5,4 +5,5 @@
     <string name="question3_textView">Insert Question 3 Text Here</string>
     <string name="question4_textView">Insert Question 4 Text Here</string>
     <string name="instructions_textView">Insert Quiz Instructions Here</string>
+    <string name="button_text">Submit Answers</string>
 </resources>

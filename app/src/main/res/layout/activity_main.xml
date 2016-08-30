@@ -20,24 +20,31 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:fontFamily="sans-serif"
-            android:textSize="24sp"
+            android:text="@string/instructions_textView"
             android:textColor="@color/textColor"
-            android:text="@string/instructions_textView"/>
+            android:textSize="24sp"/>
 
         <TextView
-            android:text="@string/question1_textView"
-            style="@style/questionTextViewStyle"/>
+            style="@style/questionTextViewStyle"
+            android:text="@string/question1_textView"/>
 
         <TextView
-            android:text="@string/question2_textView"
-            style="@style/questionTextViewStyle"/>
+            style="@style/questionTextViewStyle"
+            android:text="@string/question2_textView"/>
 
         <TextView
-            android:text="@string/question3_textView"
-            style="@style/questionTextViewStyle"/>
+            style="@style/questionTextViewStyle"
+            android:text="@string/question3_textView"/>
 
         <TextView
-            android:text="@string/question4_textView"
-            style="@style/questionTextViewStyle"/>
+            style="@style/questionTextViewStyle"
+            android:text="@string/question4_textView"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="submitAnswers"
+            android:text="@string/button_text"/>
     </LinearLayout>
 </ScrollView>
