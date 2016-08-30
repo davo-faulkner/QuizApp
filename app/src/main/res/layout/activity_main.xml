@@ -28,13 +28,22 @@
             style="@style/questionTextViewStyle"
             android:text="@string/question1_textView"/>
 
+        <View
+            style="@style/grayLineStyle"/>
+
         <TextView
             style="@style/questionTextViewStyle"
             android:text="@string/question2_textView"/>
 
+        <View
+            style="@style/grayLineStyle"/>
+
         <TextView
             style="@style/questionTextViewStyle"
             android:text="@string/question3_textView"/>
+
+        <View
+            style="@style/grayLineStyle"/>
 
         <TextView
             style="@style/questionTextViewStyle"
