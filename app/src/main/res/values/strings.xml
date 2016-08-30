@@ -6,4 +6,8 @@
     <string name="question4_textView">Insert Question 4 Text Here</string>
     <string name="instructions_textView">Insert Quiz Instructions Here</string>
     <string name="button_text">Submit Answers</string>
+    <string name="question1_option1_text">Insert Q1 O1 Text Here</string>
+    <string name="question1_option2_text">Insert Q1 O2 Text Here</string>
+    <string name="question1_option3_text">Insert Q1 O3 Text Here</string>
+    <string name="question1_option4_text">Insert Q1 O4 Text Here</string>
 </resources>

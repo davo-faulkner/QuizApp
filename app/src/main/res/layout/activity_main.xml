@@ -29,20 +29,20 @@
             android:text="@string/question1_textView"/>
 
         <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="@string/question1_option1_text"
+            style="@style/optionStyle"/>
 
         <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="@string/question1_option2_text"
+            style="@style/optionStyle"/>
 
         <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="@string/question1_option3_text"
+            style="@style/optionStyle"/>
 
         <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="@string/question1_option4_text"
+            style="@style/optionStyle"/>
 
         <View
             style="@style/grayLineStyle"/>
