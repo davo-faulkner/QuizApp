@@ -52,20 +52,20 @@
             android:text="@string/question2_textView"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="@string/question2_option1_text"
+            style="@style/optionStyle"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="@string/question2_option2_text"
+            style="@style/optionStyle"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="@string/question2_option3_text"
+            style="@style/optionStyle"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="@string/question2_option4_text"
+            style="@style/optionStyle"/>
 
         <View
             style="@style/grayLineStyle"/>
@@ -75,20 +75,20 @@
             android:text="@string/question3_textView"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="@string/question3_option1_text"
+            style="@style/optionStyle"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="@string/question3_option2_text"
+            style="@style/optionStyle"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="@string/question3_option3_text"
+            style="@style/optionStyle"/>
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="@string/question3_option4_text"
+            style="@style/optionStyle"/>
 
         <View
             style="@style/grayLineStyle"/>

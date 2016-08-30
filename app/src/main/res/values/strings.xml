@@ -10,4 +10,12 @@
     <string name="question1_option2_text">Insert Q1 O2 Text Here</string>
     <string name="question1_option3_text">Insert Q1 O3 Text Here</string>
     <string name="question1_option4_text">Insert Q1 O4 Text Here</string>
+    <string name="question2_option1_text">Insert Q2 O1 Text Here</string>
+    <string name="question2_option2_text">Insert Q2 O2 Text Here</string>
+    <string name="question2_option3_text">Insert Q2 O3 Text Here</string>
+    <string name="question2_option4_text">Insert Q2 O4 Text Here</string>
+    <string name="question3_option1_text">Insert Q3 O1 Text Here</string>
+    <string name="question3_option2_text">Insert Q3 O2 Text Here</string>
+    <string name="question3_option3_text">Insert Q3 O3 Text Here</string>
+    <string name="question3_option4_text">Insert Q3 O4 Text Here</string>
 </resources>
