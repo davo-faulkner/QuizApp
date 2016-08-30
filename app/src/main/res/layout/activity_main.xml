@@ -28,12 +28,20 @@
             style="@style/questionTextViewStyle"
             android:text="@string/question1_textView"/>
 
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
         <View
             style="@style/grayLineStyle"/>
 
         <TextView
             style="@style/questionTextViewStyle"
             android:text="@string/question2_textView"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
         <View
             style="@style/grayLineStyle"/>
@@ -42,12 +50,20 @@
             style="@style/questionTextViewStyle"
             android:text="@string/question3_textView"/>
 
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
         <View
             style="@style/grayLineStyle"/>
 
         <TextView
             style="@style/questionTextViewStyle"
             android:text="@string/question4_textView"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
         <Button
             android:layout_width="wrap_content"
