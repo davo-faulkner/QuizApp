@@ -52,18 +52,26 @@
             android:text="@string/question2_textView"/>
 
         <RadioButton
+            android:id="@+id/radio_q2o1"
+            android:onClick="onQ2RadioButtonClicked"
             android:text="@string/question2_option1_text"
             style="@style/optionStyle"/>
 
         <RadioButton
+            android:id="@+id/radio_q2o2"
+            android:onClick="onQ2RadioButtonClicked"
             android:text="@string/question2_option2_text"
             style="@style/optionStyle"/>
 
         <RadioButton
+            android:id="@+id/radio_q2o3"
+            android:onClick="onQ2RadioButtonClicked"
             android:text="@string/question2_option3_text"
             style="@style/optionStyle"/>
 
         <RadioButton
+            android:id="@+id/radio_q2o4"
+            android:onClick="onQ2RadioButtonClicked"
             android:text="@string/question2_option4_text"
             style="@style/optionStyle"/>
 
@@ -75,18 +83,26 @@
             android:text="@string/question3_textView"/>
 
         <RadioButton
+            android:id="@+id/radio_q3o1"
+            android:onClick="onQ3RadioButtonClicked"
             android:text="@string/question3_option1_text"
             style="@style/optionStyle"/>
 
         <RadioButton
+            android:id="@+id/radio_q3o2"
+            android:onClick="onQ3RadioButtonClicked"
             android:text="@string/question3_option2_text"
             style="@style/optionStyle"/>
 
         <RadioButton
+            android:id="@+id/radio_q3o3"
+            android:onClick="onQ3RadioButtonClicked"
             android:text="@string/question3_option3_text"
             style="@style/optionStyle"/>
 
         <RadioButton
+            android:id="@+id/radio_q3o4"
+            android:onClick="onQ3RadioButtonClicked"
             android:text="@string/question3_option4_text"
             style="@style/optionStyle"/>
 
