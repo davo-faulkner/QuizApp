@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -172,7 +173,53 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void submitAnswers(View view) {
+        int correctAnswerCount = 0;
+        int score = correctAnswerCount * 25;
+
         checkAnswerOne();
         checkAnswerFour();
+
+        if (!isQuestionOneAnswered ||
+                !isQuestionTwoAnswered ||
+                !isQuestionThreeAnswered ||
+                !isQuestionFourAnswered) {
+            // Display Toast message requesting that all questions be answered
+
+            return;
+        }
+
+        if (isAnswerOneCorrect &&
+                isAnswerTwoCorrect &&
+                isAnswerThreeCorrect &&
+                isAnswerFourCorrect) {
+            // Display Toast message that all answers are correct
+
+            return;
+        }
+
+        if (!isAnswerOneCorrect &&
+                !isAnswerTwoCorrect &&
+                !isAnswerThreeCorrect &&
+                !isAnswerFourCorrect) {
+            // Display Toast message that no answers are correct
+
+            return;
+        }
+
+        if (isAnswerOneCorrect) {
+            correctAnswerCount++;
+        }
+
+        if (isAnswerTwoCorrect) {
+            correctAnswerCount++;
+        }
+
+        if (isAnswerThreeCorrect) {
+            correctAnswerCount++;
+        }
+
+        if (isAnswerFourCorrect) {
+            correctAnswerCount++;
+        }
     }
 }
