@@ -118,6 +118,7 @@
             android:text="@string/question4_textView"/>
 
         <EditText
+            android:id="@+id/q4_editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_answer_here"/>

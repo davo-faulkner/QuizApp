@@ -2,8 +2,10 @@ package co.davo.quizapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -51,6 +53,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void checkAnswerFour() {
+        EditText q4EditText = (EditText) findViewById(R.id.q4_editText);
+        String q4EditTextString = q4EditText.getText().toString().toLowerCase();
+        String q4KeyWord = getString(R.string.question4_keyWord).toLowerCase();
+
+        if (q4EditTextString.isEmpty()) {
+            // If question 4 is not answered, execute the following code
+            isQuestionFourAnswered = false;
+            return;
+        }
+
+        if (q4EditTextString.contains(q4KeyWord)) {
+            isAnswerFourCorrect = true;
+        } else {
+            isAnswerFourCorrect = false;
+        }
 
     }
 
