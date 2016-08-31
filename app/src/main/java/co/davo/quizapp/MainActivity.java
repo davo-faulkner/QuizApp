@@ -3,6 +3,7 @@ package co.davo.quizapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.RadioButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,11 +29,29 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void checkAnswerOne() {
+        CheckBox q1O1CheckBox = (CheckBox) findViewById(R.id.checkbox_q1o1);
+        CheckBox q1O2CheckBox = (CheckBox) findViewById(R.id.checkbox_q1o2);
+        CheckBox q1O3CheckBox = (CheckBox) findViewById(R.id.checkbox_q1o3);
+        CheckBox q1O4CheckBox = (CheckBox) findViewById(R.id.checkbox_q1o4);
+
+        if (q1O1CheckBox.isChecked() ||
+                q1O2CheckBox.isChecked() ||
+                q1O3CheckBox.isChecked() ||
+                q1O4CheckBox.isChecked()) {
+            isQuestionOneAnswered = true;
+        }
+
+        if (q1O1CheckBox.isChecked() &&
+                !q1O2CheckBox.isChecked() &&
+                q1O3CheckBox.isChecked() &&
+                !q1O4CheckBox.isChecked()) {
+            isAnswerOneCorrect = true;
+        }
 
     }
 
     public void checkAnswerFour() {
-        
+
     }
 
     public void onQ2RadioButtonClicked(View view) {

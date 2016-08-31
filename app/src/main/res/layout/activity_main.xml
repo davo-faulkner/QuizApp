@@ -29,18 +29,22 @@
             android:text="@string/question1_textView"/>
 
         <CheckBox
+            android:id="@+id/checkbox_q1o1"
             android:text="@string/question1_option1_text"
             style="@style/optionStyle"/>
 
         <CheckBox
+            android:id="@+id/checkbox_q1o2"
             android:text="@string/question1_option2_text"
             style="@style/optionStyle"/>
 
         <CheckBox
+            android:id="@+id/checkbox_q1o3"
             android:text="@string/question1_option3_text"
             style="@style/optionStyle"/>
 
         <CheckBox
+            android:id="@+id/checkbox_q1o4"
             android:text="@string/question1_option4_text"
             style="@style/optionStyle"/>
 
