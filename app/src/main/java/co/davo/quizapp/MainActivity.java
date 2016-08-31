@@ -7,6 +7,15 @@ import android.widget.RadioButton;
 
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * Answer Key: 1 & 3, 2, 1, String
+     */
+
+    boolean isQuestionOneAnswered = false;
+    boolean isQuestionTwoAnswered = false;
+    boolean isQuestionThreeAnswered = false;
+    boolean isQuestionFourAnswered = false;
+
     boolean isAnswerOneCorrect = false;
     boolean isAnswerTwoCorrect = false;
     boolean isAnswerThreeCorrect = false;
@@ -18,6 +27,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void checkAnswerOne() {
+
+    }
+
+    public void checkAnswerFour() {
+        
+    }
+
     public void onQ2RadioButtonClicked(View view) {
         RadioButton q2O1RadioButton = (RadioButton) findViewById(R.id.radio_q2o1);
         RadioButton q2O2RadioButton = (RadioButton) findViewById(R.id.radio_q2o2);
@@ -26,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
+
+        if (checked) {
+            isQuestionTwoAnswered = true;
+        }
 
         // Check which radio button was clicked
         switch(view.getId()) {
@@ -73,6 +94,10 @@ public class MainActivity extends AppCompatActivity {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
 
+        if (checked) {
+            isQuestionThreeAnswered = true;
+        }
+
         // Check which radio button was clicked
         switch(view.getId()) {
             case R.id.radio_q3o1:
@@ -108,5 +133,10 @@ public class MainActivity extends AppCompatActivity {
                     isAnswerThreeCorrect = false;
                     break;
         }
+    }
+
+    public void submitAnswers(View view) {
+        checkAnswerOne();
+        checkAnswerFour();
     }
 }
