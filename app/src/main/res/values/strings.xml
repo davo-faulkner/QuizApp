@@ -18,4 +18,5 @@
     <string name="question3_option2_text">Insert Q3 O2 Text Here</string>
     <string name="question3_option3_text">Insert Q3 O3 Text Here</string>
     <string name="question3_option4_text">Insert Q3 O4 Text Here</string>
+    <string name="enter_answer_here">Enter answer here</string>
 </resources>
