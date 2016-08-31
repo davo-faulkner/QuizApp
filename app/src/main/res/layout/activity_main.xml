@@ -29,18 +29,22 @@
             android:text="@string/question1_textView"/>
 
         <CheckBox
+            android:id="@+id/checkbox_q1o1"
             android:text="@string/question1_option1_text"
             style="@style/optionStyle"/>
 
         <CheckBox
+            android:id="@+id/checkbox_q1o2"
             android:text="@string/question1_option2_text"
             style="@style/optionStyle"/>
 
         <CheckBox
+            android:id="@+id/checkbox_q1o3"
             android:text="@string/question1_option3_text"
             style="@style/optionStyle"/>
 
         <CheckBox
+            android:id="@+id/checkbox_q1o4"
             android:text="@string/question1_option4_text"
             style="@style/optionStyle"/>
 
@@ -52,18 +56,26 @@
             android:text="@string/question2_textView"/>
 
         <RadioButton
+            android:id="@+id/radio_q2o1"
+            android:onClick="onQ2RadioButtonClicked"
             android:text="@string/question2_option1_text"
             style="@style/optionStyle"/>
 
         <RadioButton
+            android:id="@+id/radio_q2o2"
+            android:onClick="onQ2RadioButtonClicked"
             android:text="@string/question2_option2_text"
             style="@style/optionStyle"/>
 
         <RadioButton
+            android:id="@+id/radio_q2o3"
+            android:onClick="onQ2RadioButtonClicked"
             android:text="@string/question2_option3_text"
             style="@style/optionStyle"/>
 
         <RadioButton
+            android:id="@+id/radio_q2o4"
+            android:onClick="onQ2RadioButtonClicked"
             android:text="@string/question2_option4_text"
             style="@style/optionStyle"/>
 
@@ -75,18 +87,26 @@
             android:text="@string/question3_textView"/>
 
         <RadioButton
+            android:id="@+id/radio_q3o1"
+            android:onClick="onQ3RadioButtonClicked"
             android:text="@string/question3_option1_text"
             style="@style/optionStyle"/>
 
         <RadioButton
+            android:id="@+id/radio_q3o2"
+            android:onClick="onQ3RadioButtonClicked"
             android:text="@string/question3_option2_text"
             style="@style/optionStyle"/>
 
         <RadioButton
+            android:id="@+id/radio_q3o3"
+            android:onClick="onQ3RadioButtonClicked"
             android:text="@string/question3_option3_text"
             style="@style/optionStyle"/>
 
         <RadioButton
+            android:id="@+id/radio_q3o4"
+            android:onClick="onQ3RadioButtonClicked"
             android:text="@string/question3_option4_text"
             style="@style/optionStyle"/>
 
@@ -99,13 +119,14 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_answer_here"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:onClick="submitAnswers"
-            android:text="@string/button_text"/>
+            android:text="@string/button_text" />
     </LinearLayout>
 </ScrollView>
