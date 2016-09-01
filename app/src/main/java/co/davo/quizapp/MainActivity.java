@@ -177,6 +177,7 @@ public class MainActivity extends AppCompatActivity {
     public void submitAnswers(View view) {
         int correctAnswerCount = 0;
         int score;
+        String wasWere = "s were";
 
         checkAnswerOne();
         checkAnswerFour();
@@ -187,22 +188,6 @@ public class MainActivity extends AppCompatActivity {
                 !isQuestionFourAnswered) {
             // Display Toast message requesting that all questions be answered
             Toast toast = Toast.makeText(this, "Please answer all questions", Toast.LENGTH_SHORT);
-            toast.show();
-
-        } else if (isAnswerOneCorrect &&
-                isAnswerTwoCorrect &&
-                isAnswerThreeCorrect &&
-                isAnswerFourCorrect) {
-            // Display Toast message that all answers are correct and score = 100%
-            Toast toast = Toast.makeText(this, "All answers were correct - Score = 100%", Toast.LENGTH_SHORT);
-            toast.show();
-
-        } else if (!isAnswerOneCorrect &&
-                !isAnswerTwoCorrect &&
-                !isAnswerThreeCorrect &&
-                !isAnswerFourCorrect) {
-            // Display Toast message that no answers are correct and score = 0%
-            Toast toast = Toast.makeText(this, "No answers were correct - Score = 0%", Toast.LENGTH_SHORT);
             toast.show();
 
         } else {
@@ -225,7 +210,10 @@ public class MainActivity extends AppCompatActivity {
 
             // Display Toast message that some answers are correct and score = 25% - 75%
             score = correctAnswerCount * 25;
-            Toast toast = Toast.makeText(this, "Some answers were correct - Score = " + score + "%", Toast.LENGTH_SHORT);
+            if (correctAnswerCount == 1) {
+                wasWere = " was";
+            }
+            Toast toast = Toast.makeText(this, correctAnswerCount + " answer" + wasWere + " correct. Score = " + score + "%", Toast.LENGTH_SHORT);
             toast.show();
         }
     }
