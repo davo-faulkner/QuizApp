@@ -121,6 +121,8 @@
             android:id="@+id/q4_editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions"
+            android:imeOptions="actionDone"
             android:hint="@string/enter_answer_here"/>
 
         <Button
