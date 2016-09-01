@@ -32,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void checkAnswerOne() {
+        isQuestionOneAnswered = false;
+        isAnswerOneCorrect = false;
+
         CheckBox q1O1CheckBox = (CheckBox) findViewById(R.id.checkbox_q1o1);
         CheckBox q1O2CheckBox = (CheckBox) findViewById(R.id.checkbox_q1o2);
         CheckBox q1O3CheckBox = (CheckBox) findViewById(R.id.checkbox_q1o3);
@@ -199,6 +202,8 @@ public class MainActivity extends AppCompatActivity {
                 !isAnswerThreeCorrect &&
                 !isAnswerFourCorrect) {
             // Display Toast message that no answers are correct and score = 0%
+            Toast toast = Toast.makeText(this, "No answers were correct - Score = 0%", Toast.LENGTH_SHORT);
+            toast.show();
 
         } else {
 
