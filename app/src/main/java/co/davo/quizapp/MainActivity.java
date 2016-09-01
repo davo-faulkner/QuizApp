@@ -58,9 +58,9 @@ public class MainActivity extends AppCompatActivity {
         String q4EditTextString = q4EditText.getText().toString().toLowerCase();
         String q4KeyWord = getString(R.string.question4_keyWord).toLowerCase();
 
-        if (q4EditTextString.isEmpty()) {
+        if (!q4EditTextString.isEmpty()) {
             // If question 4 is not answered, execute the following code
-            isQuestionFourAnswered = false;
+            isQuestionFourAnswered = true;
             return;
         }
 
