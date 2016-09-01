@@ -19,8 +19,8 @@
             android:padding="16dp"
             android:background="@color/colorPrimaryLight"
             android:text="@string/instructions_textView"
-            android:textColor="@color/instructionTextColor"
-            android:textSize="24sp"/>
+            android:textColor="@color/textColor"
+            android:textSize="20sp"/>
 
         <TextView
             style="@style/questionTextViewStyle"
