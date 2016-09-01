@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void submitAnswers(View view) {
         int correctAnswerCount = 0;
-        int score = correctAnswerCount * 25;
+        int score;
 
         checkAnswerOne();
         checkAnswerFour();
@@ -224,6 +224,9 @@ public class MainActivity extends AppCompatActivity {
             }
 
             // Display Toast message that some answers are correct and score = 25% - 75%
+            score = correctAnswerCount * 25;
+            Toast toast = Toast.makeText(this, "Some answers were correct - Score = " + score + "%", Toast.LENGTH_SHORT);
+            toast.show();
         }
     }
 }
