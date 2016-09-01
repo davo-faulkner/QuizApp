@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
         if (!q4EditTextString.isEmpty()) {
             // If question 4 is not answered, execute the following code
             isQuestionFourAnswered = true;
-            return;
         }
 
         if (q4EditTextString.contains(q4KeyWord)) {
@@ -192,6 +191,8 @@ public class MainActivity extends AppCompatActivity {
                 isAnswerThreeCorrect &&
                 isAnswerFourCorrect) {
             // Display Toast message that all answers are correct and score = 100%
+            Toast toast = Toast.makeText(this, "All answers were correct - Score = 100%", Toast.LENGTH_SHORT);
+            toast.show();
 
         } else if (!isAnswerOneCorrect &&
                 !isAnswerTwoCorrect &&
