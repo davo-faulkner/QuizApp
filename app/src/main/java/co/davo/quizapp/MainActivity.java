@@ -186,7 +186,7 @@ public class MainActivity extends AppCompatActivity {
                 !isQuestionThreeAnswered ||
                 !isQuestionFourAnswered) {
             // Display Toast message requesting that all questions be answered
-            Toast toast = Toast.makeText(this, "Please answer all questions before submitting", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this, "Please answer all questions", Toast.LENGTH_SHORT);
             toast.show();
 
         } else if (isAnswerOneCorrect &&
