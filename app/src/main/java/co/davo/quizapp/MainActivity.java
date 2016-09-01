@@ -184,42 +184,40 @@ public class MainActivity extends AppCompatActivity {
                 !isQuestionThreeAnswered ||
                 !isQuestionFourAnswered) {
             // Display Toast message requesting that all questions be answered
+            Toast toast = Toast.makeText(this, "Please answer all questions before submitting", Toast.LENGTH_SHORT);
+            toast.show();
 
-            return;
-        }
-
-        if (isAnswerOneCorrect &&
+        } else if (isAnswerOneCorrect &&
                 isAnswerTwoCorrect &&
                 isAnswerThreeCorrect &&
                 isAnswerFourCorrect) {
-            // Display Toast message that all answers are correct
+            // Display Toast message that all answers are correct and score = 100%
 
-            return;
-        }
-
-        if (!isAnswerOneCorrect &&
+        } else if (!isAnswerOneCorrect &&
                 !isAnswerTwoCorrect &&
                 !isAnswerThreeCorrect &&
                 !isAnswerFourCorrect) {
-            // Display Toast message that no answers are correct
+            // Display Toast message that no answers are correct and score = 0%
 
-            return;
-        }
+        } else {
 
-        if (isAnswerOneCorrect) {
-            correctAnswerCount++;
-        }
+            if (isAnswerOneCorrect) {
+                correctAnswerCount++;
+            }
 
-        if (isAnswerTwoCorrect) {
-            correctAnswerCount++;
-        }
+            if (isAnswerTwoCorrect) {
+                correctAnswerCount++;
+            }
 
-        if (isAnswerThreeCorrect) {
-            correctAnswerCount++;
-        }
+            if (isAnswerThreeCorrect) {
+                correctAnswerCount++;
+            }
 
-        if (isAnswerFourCorrect) {
-            correctAnswerCount++;
+            if (isAnswerFourCorrect) {
+                correctAnswerCount++;
+            }
+
+            // Display Toast message that some answers are correct and score = 25% - 75%
         }
     }
 }
