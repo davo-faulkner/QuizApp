@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Quiz App</string>
-    <string name="question1_textView">What are the attributes of standard CD audio files? (check all that apply)</string>
+    <string name="question1_textView">What are the attributes of standard audio CD files? (check all that apply)</string>
     <string name="question2_textView">What is the most noticable difference between different mp3 bandwidth settings?</string>
     <string name="question3_textView">When should you convert from uncompressed audio to mp3?</string>
-    <string name="question4_textView">Describe what happens when your analog low-pass filters have failed on your analog-to-digital convertors.</string>
+    <string name="question4_textView">In one word, describe what happens when your analog low-pass filters have failed on your analog-to-digital convertors.</string>
     <string name="instructions_textView">This short quiz tests your knowledge of basic digital audio principles. Good luck!</string>
     <string name="button_text">Submit Answers</string>
     <string name="question1_option1_text">16 bit dynamic range</string>
@@ -13,7 +13,7 @@
     <string name="question2_option1_text">Lower bandwidth correlates to a higher quantization noise level</string>
     <string name="question2_option2_text">Lower bandwidth correlates to a lower low-pass frequency knee</string>
     <string name="question2_option3_text">Lower bandwidth correlates to higher aliasing</string>
-    <string name="question2_option4_text">Lower bandwidth correlates to a lower signal-to-noise ratio</string>
+    <string name="question2_option4_text">Lower bandwidth correlates to a higher signal-to-noise ratio</string>
     <string name="question3_option1_text">It should be the very last stage of processing</string>
     <string name="question3_option2_text">After editing, but before any signal processing</string>
     <string name="question3_option3_text">Immediately after recording</string>
