@@ -12,14 +12,27 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     /**
-     * Answer Key: 1 & 3, 2, 1, String
+     * Answer Key:
+     * Question One: Options 1 & 3
+     * Question Two: Option 2
+     * Question Three: Option 1
+     * Question Four: Answer must contain the string "alias"
+     *
+     * NOTE: To keep variable names short, the naming scheme qxox is used where:
+     * q = "question"
+     * x = any integer value
+     * o = "option"
+     *
+     * Example: q1o1 = question 1, option 1
      */
 
+    // Set all questions to not answered by default
     boolean isQuestionOneAnswered = false;
     boolean isQuestionTwoAnswered = false;
     boolean isQuestionThreeAnswered = false;
     boolean isQuestionFourAnswered = false;
 
+    // Set all answers to incorrect by default
     boolean isAnswerOneCorrect = false;
     boolean isAnswerTwoCorrect = false;
     boolean isAnswerThreeCorrect = false;
@@ -31,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * Check to see if question one is answered and if answer is correct
+     */
     public void checkAnswerOne() {
         isQuestionOneAnswered = false;
         isAnswerOneCorrect = false;
@@ -40,35 +56,46 @@ public class MainActivity extends AppCompatActivity {
         CheckBox q1O3CheckBox = (CheckBox) findViewById(R.id.checkbox_q1o3);
         CheckBox q1O4CheckBox = (CheckBox) findViewById(R.id.checkbox_q1o4);
 
+        // Check if question one is answered
         if (q1O1CheckBox.isChecked() ||
                 q1O2CheckBox.isChecked() ||
                 q1O3CheckBox.isChecked() ||
                 q1O4CheckBox.isChecked()) {
+            // If question one is answered, execute the following code
             isQuestionOneAnswered = true;
         }
 
+        // Check if answer one is correct
         if (q1O1CheckBox.isChecked() &&
                 !q1O2CheckBox.isChecked() &&
                 q1O3CheckBox.isChecked() &&
                 !q1O4CheckBox.isChecked()) {
+            // If answer one is correct, execute the following code
             isAnswerOneCorrect = true;
         }
 
     }
 
+    /**
+     * Check to see if question one is answered and if answer is correct
+     */
     public void checkAnswerFour() {
         EditText q4EditText = (EditText) findViewById(R.id.q4_editText);
         String q4EditTextString = q4EditText.getText().toString().toLowerCase();
         String q4KeyWord = getString(R.string.question4_keyWord).toLowerCase();
 
+        // Check if question four is answered
         if (!q4EditTextString.isEmpty()) {
-            // If question 4 is not answered, execute the following code
+            // If question four is answered, execute the following code
             isQuestionFourAnswered = true;
         }
 
+        // Check if answer four is correct
         if (q4EditTextString.contains(q4KeyWord)) {
+            // If answer four is correct, execute the following code
             isAnswerFourCorrect = true;
         } else {
+            // If answer four is not correct, execute the following code
             isAnswerFourCorrect = false;
         }
 
@@ -84,43 +111,44 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
 
         if (checked) {
+            // If question two is answered, execute the following code
             isQuestionTwoAnswered = true;
         }
 
         // Check which radio button was clicked
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.radio_q2o1:
                 if (checked)
                     q2O2RadioButton.setChecked(false);
-                    q2O3RadioButton.setChecked(false);
-                    q2O4RadioButton.setChecked(false);
+                q2O3RadioButton.setChecked(false);
+                q2O4RadioButton.setChecked(false);
 
-                    isAnswerTwoCorrect = false;
-                    break;
+                isAnswerTwoCorrect = false;
+                break;
             case R.id.radio_q2o2:
                 if (checked)
                     q2O1RadioButton.setChecked(false);
-                    q2O3RadioButton.setChecked(false);
-                    q2O4RadioButton.setChecked(false);
+                q2O3RadioButton.setChecked(false);
+                q2O4RadioButton.setChecked(false);
 
-                    isAnswerTwoCorrect = true;
-                    break;
+                isAnswerTwoCorrect = true;
+                break;
             case R.id.radio_q2o3:
                 if (checked)
                     q2O1RadioButton.setChecked(false);
-                    q2O2RadioButton.setChecked(false);
-                    q2O4RadioButton.setChecked(false);
+                q2O2RadioButton.setChecked(false);
+                q2O4RadioButton.setChecked(false);
 
-                    isAnswerTwoCorrect = false;
-                    break;
+                isAnswerTwoCorrect = false;
+                break;
             case R.id.radio_q2o4:
                 if (checked)
                     q2O1RadioButton.setChecked(false);
-                    q2O2RadioButton.setChecked(false);
-                    q2O3RadioButton.setChecked(false);
+                q2O2RadioButton.setChecked(false);
+                q2O3RadioButton.setChecked(false);
 
-                    isAnswerTwoCorrect = false;
-                    break;
+                isAnswerTwoCorrect = false;
+                break;
         }
     }
 
@@ -134,43 +162,44 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
 
         if (checked) {
+            // If question three is answered, execute the following code
             isQuestionThreeAnswered = true;
         }
 
         // Check which radio button was clicked
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.radio_q3o1:
                 if (checked)
                     q3O2RadioButton.setChecked(false);
-                    q3O3RadioButton.setChecked(false);
-                    q3O4RadioButton.setChecked(false);
+                q3O3RadioButton.setChecked(false);
+                q3O4RadioButton.setChecked(false);
 
-                    isAnswerThreeCorrect = true;
-                    break;
+                isAnswerThreeCorrect = true;
+                break;
             case R.id.radio_q3o2:
                 if (checked)
                     q3O1RadioButton.setChecked(false);
-                    q3O3RadioButton.setChecked(false);
-                    q3O4RadioButton.setChecked(false);
+                q3O3RadioButton.setChecked(false);
+                q3O4RadioButton.setChecked(false);
 
-                    isAnswerThreeCorrect = false;
-                    break;
+                isAnswerThreeCorrect = false;
+                break;
             case R.id.radio_q3o3:
                 if (checked)
                     q3O1RadioButton.setChecked(false);
-                    q3O2RadioButton.setChecked(false);
-                    q3O4RadioButton.setChecked(false);
+                q3O2RadioButton.setChecked(false);
+                q3O4RadioButton.setChecked(false);
 
-                    isAnswerThreeCorrect = false;
-                    break;
+                isAnswerThreeCorrect = false;
+                break;
             case R.id.radio_q3o4:
                 if (checked)
                     q3O1RadioButton.setChecked(false);
-                    q3O2RadioButton.setChecked(false);
-                    q3O3RadioButton.setChecked(false);
+                q3O2RadioButton.setChecked(false);
+                q3O3RadioButton.setChecked(false);
 
-                    isAnswerThreeCorrect = false;
-                    break;
+                isAnswerThreeCorrect = false;
+                break;
         }
     }
 
@@ -182,6 +211,7 @@ public class MainActivity extends AppCompatActivity {
         checkAnswerOne();
         checkAnswerFour();
 
+        // Check to make sure all questions were answered
         if (!isQuestionOneAnswered ||
                 !isQuestionTwoAnswered ||
                 !isQuestionThreeAnswered ||
@@ -192,6 +222,7 @@ public class MainActivity extends AppCompatActivity {
 
         } else {
 
+            // Add one to the total correctAnswerCount for each correct answer
             if (isAnswerOneCorrect) {
                 correctAnswerCount++;
             }
@@ -208,12 +239,12 @@ public class MainActivity extends AppCompatActivity {
                 correctAnswerCount++;
             }
 
-            // Display Toast message that some answers are correct and score = 25% - 75%
+            // Display Toast message with correctAnswerCount and score
             score = correctAnswerCount * 25;
             if (correctAnswerCount == 1) {
                 wasWere = " was";
             }
-            Toast toast = Toast.makeText(this, correctAnswerCount + " answer" + wasWere + " correct. Score = " + score + "%", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this, correctAnswerCount + " answer" + wasWere + " correct. Score: " + score + "%", Toast.LENGTH_SHORT);
             toast.show();
         }
     }
