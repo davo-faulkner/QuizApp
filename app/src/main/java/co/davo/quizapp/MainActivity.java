@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Check to see if question one is answered and if answer is correct
+     * Check to see if question four is answered and if answer is correct
      */
     public void checkAnswerFour() {
         EditText q4EditText = (EditText) findViewById(R.id.q4_editText);
